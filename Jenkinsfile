@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/ashparshp/todo-api-go.git'
+                git branch: 'main', url: 'https://github.com/ashparshp/todo-api-go.git'
             }
         }
 
